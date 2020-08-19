@@ -1,5 +1,8 @@
 {% extends "base_generic.html" %}
+{% load static %}
 {% block content %}
+
+	<!-- Home -->
 
 	<div class="home">
 		<div class="home_slider_container">
@@ -9,7 +12,7 @@
 				
 				<!-- Slide -->
 				<div class="owl-item">
-					<div class="background_image" style="background-image:url(../static/images/index.jpg)"></div>
+					<div class="background_image" style="background-image:url({% static 'images/index.jpg' %})"></div>
 					<div class="home_container">
 						<div class="home_container_inner d-flex flex-column align-items-center justify-content-center">
 							<div class="home_content text-center">
@@ -23,7 +26,7 @@
 
 				<!-- Slide -->
 				<div class="owl-item">
-					<div class="background_image" style="background-image:url(../static/images/index.jpg)"></div>
+					<div class="background_image" style="background-image:url({% static 'images/index.jpg' %})"></div>
 					<div class="home_container">
 						<div class="home_container_inner d-flex flex-column align-items-center justify-content-center">
 							<div class="home_content text-center">
@@ -37,7 +40,7 @@
 
 				<!-- Slide -->
 				<div class="owl-item">
-					<div class="background_image" style="background-image:url(../static/images/index.jpg)"></div>
+					<div class="background_image" style="background-image:url({% static 'images/index.jpg' %})"></div>
 					<div class="home_container">
 						<div class="home_container_inner d-flex flex-column align-items-center justify-content-center">
 							<div class="home_content text-center">
@@ -56,7 +59,7 @@
 	<!-- Featured Album -->
 
 	<div class="featured_album">
-		<div class="background_image featured_background" style="background-image:url(../static/images/featured.png)"></div>
+		<div class="background_image featured_background" style="background-image:url({% static 'images/featured.png)"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 offset-lg-6">
@@ -72,8 +75,8 @@
 				<div class="col-md-6">
 					<div class="featured_album_image">
 						<div class="image_overlay"></div>
-						<div class="background_image" style="background-image:url(../static/images/featured_album.jpg)"></div>
-						<!-- <img src="../static/images/featured_album.jpg" alt=""> -->
+						<div class="background_image" style="background-image:url({% static 'images/featured_album.jpg' %})"></div>
+						<!-- <img src="{% static 'images/featured_album.jpg' %}" alt=""> -->
 					</div>
 				</div>
 
@@ -226,7 +229,7 @@
 				<div class="col-lg-4 order-lg-2 order-1">
 					<div class="shows_image">
 						<div class="image_overlay"></div>
-						<img src="../static/images/shows.jpg" alt="https://unsplash.com/@anthonydelanoix">
+						<img src="{% static 'images/shows.jpg' %}" alt="https://unsplash.com/@anthonydelanoix">
 					</div>
 				</div>
 
@@ -243,7 +246,7 @@
 				<!-- Artist Image -->
 				<div class="col-lg-4 artist_image_col">
 					<div class="artist_image">
-						<img src="../static/images/artist.png" alt="">
+						<img src="{% static 'images/artist.png" alt="">
 					</div>
 				</div>
 
@@ -258,7 +261,7 @@
 							<p> In vitae nisi aliquam, scelerisque leo a, volutpat sem. Vivamus rutrum dui fermentum eros hendrerit, id lobortis leo volutpat. Maecenas sollicitudin est in libero pretium interdum. Nullam volutpat dui sem, ac congue purus luctus nec. Curabitur luctus luctus erat, sit amet facilisis quam congue quis. Quisque ornare luctus erat id dignissim. Nullam ac nunc quis ex porttitor luctus.</p>
 							<p>Integer sed facilisis eros. In iaculis rhoncus velit in malesuada. In hac habitasse platea dictumst. Fusce erat ex, consectetur sit amet ornare suscipit, porta et erat. Donec nec nisi in nibh commodo laoreet. Mauris dapibus justo ut feugiat malesuada. Fusce ultricies ante tortor, non vestibulum est feugiat ut.</p>
 						</div>
-						<div class="artist_sig"><img src="../static/images/sig.png" alt=""></div>
+						<div class="artist_sig"><img src="{% static 'images/sig.png" alt=""></div>
 						<div class="single_player_container d-flex flex-column align-items-start justify-content-center">
 							<div class="single_player">
 								<div id="jplayer_2" class="jp-jplayer"></div>
@@ -312,7 +315,7 @@
 
 	<div class="extra">
 		<div class="extra_container">
-			<div class="background_image" style="background-image:url(../static/images/extra.jpg)"></div>
+			<div class="background_image" style="background-image:url({% static 'images/extra.jpg' %})"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-9">

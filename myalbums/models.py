@@ -140,7 +140,7 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractBaseUser):
-    user_name = models.CharField(max_length=20)
+    username = models.CharField(max_length=20)
     password = models.CharField(None, max_length=128)
 
     email = models.EmailField(
@@ -154,7 +154,7 @@ class User(AbstractBaseUser):
     REQUIRED_FIELDS = []  # Email & Password are required by default.
 
     def __str__(self):
-        return f'{self.user_name}'
+        return f'{self.username}'
 
     def get_full_name(self):
         # The user is identified by their email address
