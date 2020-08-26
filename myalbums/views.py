@@ -68,7 +68,10 @@ class ArtistDetailView(DetailView):
     model = Artist
 
 
+
+
 class HotSongListView(ListView):
     model = Song
     template_name = 'myalbums/hot_music.html'
     context_object_name = 'songs'
+ 
